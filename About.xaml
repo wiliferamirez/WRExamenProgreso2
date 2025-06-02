@@ -16,7 +16,8 @@
         <BoxView Color="White"/>
         <Label
             Text="Nombre:"
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center"
+            FontAttributes="Bold"/>
         <Label
             Text="William Fernando Ramirez Paucar"
             HorizontalOptions="Center"
@@ -28,6 +29,7 @@
         <Label Grid.Column="1"
                Text="Fecha de Nacimiento:"
                HorizontalOptions="Center"
+               FontAttributes="Bold"
                 />
         <Label Grid.Column="1"
                Text="20/03/2000"
@@ -38,18 +40,21 @@
                  Color="White" />
         <Label Grid.Row="1"
                Text="Intereses"
-               HorizontalOptions="Center" />
+               HorizontalOptions="Center" 
+               FontAttributes="Bold"/>
         <Label Grid.Row="1"
                Text="Inteligencia Artificial"
                HorizontalOptions="Center"
                VerticalOptions="Center"/>
         <BoxView Grid.Row="1"
                  Grid.Column="1"
-                 Color="White" />
+                 Color="White" 
+                 Border/>
         <Label Grid.Row="1"
                Text="Version"
                Grid.Column="1"
-               HorizontalOptions="Center" />
+               HorizontalOptions="Center" 
+               FontAttributes="Bold"/>
         <Label Grid.Row="1"
                Text="1.0.0"
                Grid.Column="1"
