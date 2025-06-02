@@ -23,14 +23,26 @@
                 Text="Chistes" 
                 SemanticProperties.Hint="Navigate to Chites Page"
                 Clicked="NavigateToChistes"
-                HorizontalOptions="Fill" />
+                BackgroundColor="Black"
+                BorderColor="White"
+                BorderWidth="10"
+                TextColor="White"
+                HorizontalOptions="Center"
+                HeightRequest="60"
+                WidthRequest="350"/>
 
             <Button
                 x:Name="AboutBtn"
                 Text="About" 
                 SemanticProperties.Hint="Navigate to About Page"
                 Clicked="NavigateToAbout"
-                HorizontalOptions="Fill" />
+                BackgroundColor="Black"
+                BorderColor="White"
+                BorderWidth="10"
+                TextColor="White"
+                HorizontalOptions="Center"
+                HeightRequest="60"
+                WidthRequest="350"/>
         </StackLayout>
     </ScrollView>
 
