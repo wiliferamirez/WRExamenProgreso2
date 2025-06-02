@@ -9,14 +9,14 @@
             InitializeComponent();
         }
 
-        private void NavigateToChistes(object sender, EventArgs e)
+        private async void NavigateToChistes(object sender, EventArgs e)
         {
-
+            await Shell.Current.GoToAsync("///Chistes");
         }
 
-        private void NavigateToAbout(object sender, EventArgs e)
+        private async void NavigateToAbout(object sender, EventArgs e)
         {
-
+            await Shell.Current.GoToAsync("///About");
         }
     }
 

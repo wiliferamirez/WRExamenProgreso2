@@ -8,8 +8,16 @@
     Title="WRExamenProgreso2">
 
     <ShellContent
-        Title="Home"
+        Title=""
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+    <ShellContent
+        Title=""
+        ContentTemplate="{DataTemplate local:Chistes}"
+        Route="Chistes" />
+    <ShellContent
+        Title=""
+        ContentTemplate="{DataTemplate local:About}"
+        Route="About" />
 
 </Shell>
