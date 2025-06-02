@@ -3,10 +3,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WRExamenProgreso2.Chistes"
              Title="Chistes">
-    <VerticalStackLayout>
+    <AbsoluteLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+            x:Name="ChisteLabel"
+            Text="Presiona el botón, Cargando chiste..."
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            FontSize="Large"
+            BackgroundColor="AliceBlue"
+            AbsoluteLayout.LayoutBounds="0.5,0.5,0.9,0.6"
+            AbsoluteLayout.LayoutFlags="All" />
+        <Button
+            x:Name="NewChisteBtn"
+            Text="Otro chiste"
+            SemanticProperties.Hint="Get another chiste"
+            Clicked="NewChiste"
+            AbsoluteLayout.LayoutBounds="0.5,1,0.3,50"
+            AbsoluteLayout.LayoutFlags="WidthProportional,XProportional,YProportional"
+            />
+        <Button
+            x:Name="VolverBtn"
+            Text="Regresar a Main"
+            SemanticProperties.Hint="Get back to Main page"
+            Clicked="BackToMain"
+            BackgroundColor="White"
+            BorderColor="Black"
+            BorderWidth="1"
+            TextColor="Black"
+            />
+    </AbsoluteLayout>
 </ContentPage>
