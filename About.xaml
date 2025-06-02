@@ -3,10 +3,71 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WRExamenProgreso2.About"
              Title="About">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <BoxView Color="White"/>
+        <Label
+            Text="Nombre:"
             HorizontalOptions="Center" />
-    </VerticalStackLayout>
+        <Label
+            Text="William Fernando Ramirez Paucar"
+            HorizontalOptions="Center"
+            VerticalOptions="Center" />
+
+        <BoxView Grid.Column="1"
+                 Color="White"
+                 />
+        <Label Grid.Column="1"
+               Text="Fecha de Nacimiento:"
+               HorizontalOptions="Center"
+                />
+        <Label Grid.Column="1"
+               Text="20/03/2000"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+                />
+        <BoxView Grid.Row="1"
+                 Color="White" />
+        <Label Grid.Row="1"
+               Text="Intereses"
+               HorizontalOptions="Center" />
+        <Label Grid.Row="1"
+               Text="Inteligencia Artificial"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+        <BoxView Grid.Row="1"
+                 Grid.Column="1"
+                 Color="White" />
+        <Label Grid.Row="1"
+               Text="Version"
+               Grid.Column="1"
+               HorizontalOptions="Center" />
+        <Label Grid.Row="1"
+               Text="1.0.0"
+               Grid.Column="1"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        <BoxView Grid.Row="2"
+                 Grid.ColumnSpan="2"
+                 Color="White" />
+        <Button Grid.Row="2"
+                Grid.ColumnSpan="2"
+                Text="Volver a Main"
+                Clicked="BackToMain"
+                BackgroundColor="Black"
+                BorderColor="White"
+                BorderWidth="10"
+                TextColor="White"
+                HorizontalOptions="Center"
+                HeightRequest="60"
+                WidthRequest="350"/>
+    </Grid>
 </ContentPage>
